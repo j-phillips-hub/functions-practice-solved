@@ -19,10 +19,9 @@ rectArea(3, 2);
 // Data for calculation: room1: 4 by 6, room2: 13 by 3, room3: 4 by 8
 
 // Your code goes here:
-let room1, room2, room3;
-room1 = rectArea(4, 6);
-room2 = rectArea(13, 3);
-room3 = rectArea(4, 8);
+let room1 = rectArea(4, 6);
+let room2 = rectArea(13, 3);
+let room3 = rectArea(4, 8);
 
 /**
  * =============================================================
