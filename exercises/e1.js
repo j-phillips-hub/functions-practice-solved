@@ -13,7 +13,6 @@
 
 // Your code goes here
 const logMessage = () => console.log('Hello, World!');
-logMessage();
 
 /**
  * =============================================================
@@ -26,8 +25,7 @@ logMessage();
 */
 
 // Your code goes here...
-const logMyMessage = (message) => console.log(message);
-logMyMessage('My message');
+const logMyMessage = message => console.log(message);
 
 /**
  * ===============================================================
@@ -39,8 +37,8 @@ logMyMessage('My message');
 */
 
 // Your code goes here...
-const logMessageWithMyName = (name) => console.log(`My name is ${name}!`);
-logMessageWithMyName('Andrey');
+const logMessageWithMyName = name => console.log(`My name is ${name}!`);
+
 /**
  * ==============================================================
  * Create a function that works as follows:
@@ -53,7 +51,6 @@ logMessageWithMyName('Andrey');
 
 // Your code goes here...
 const logMyInfo = (name, age) => console.log(`My name is ${name}. I am ${age} years old!`);
-logMyInfo('Andrey', 18);
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"
