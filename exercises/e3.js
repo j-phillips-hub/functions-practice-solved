@@ -14,9 +14,16 @@
  */
 
 // Your code goes here...
+const doesArrayIncludeItemsBetweenVals = (arr, val1, val2) => {
+  for (let i of arr) {
+    if (i > val1 && i < val2) return true
+  }
+  return false
+}
 
+doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5);
 
-
+doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10);
 /**
  * ====================================================
  * Create three functions using 3 types of syntax: named, arrow and function expression (with anonymous function)
@@ -30,6 +37,21 @@
  * getValueWithConditionOne(40, 40) => 80;
  * getValueWithConditionOne(20, 30) => 100;
  */
+
+// create the named function
+function getValueWithConditionOne(num1, num2) {
+  return num1 === 40 && num2 === 40 ? num1 + num2 : (num1 + num2) * 2;
+}
+
+// create the arrow function
+const getValueWithConditionTwo = (num1, num2) =>
+  num1 === 40 && num2 === 40 ? num1 + num2 : (num1 + num2) * 2;
+
+// create the function expression
+const getValueWithConditionThree = function (num1, num2) {
+  return num1 === 40 && num2 === 40 ? num1 + num2 : (num1 + num2) * 2;
+}
+
 
 
 
